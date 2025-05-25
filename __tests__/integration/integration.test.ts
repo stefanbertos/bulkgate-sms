@@ -1,4 +1,4 @@
-import { sendSMS } from '../src';
+import { sendSMS } from '../../src';
 
 const appId = process.env.BULKGATE_APP_ID;
 const token = process.env.BULKGATE_TOKEN;
