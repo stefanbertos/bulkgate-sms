@@ -12,14 +12,14 @@ npm install bulkgate-sms
 
 The following fields in `SendSMSOptions` have defaults and can be omitted:
 
-| Field            | Default     | Description                                                   |
-|------------------|-------------|---------------------------------------------------------------|
-| `unicode`        | `false`     | Use Unicode SMS (set to `true` for Unicode)                   |
-| `sender_id`      | `'gSystem'` | System sender. Change for other sender types                  |
-| `sender_id_value`| `null`      | Sender value (e.g., for custom sender types)                  |
-| `country`        | `null`      | Country code (auto-detected if not provided)                  |
-| `schedule`       | `'Now'`     | Send immediately; set to timestamp/ISO for scheduled sending  |
-| `duplicates_check`| `'off'`    | No duplicate check by default                                 |
+| Field              | Default     | Description                                                  |
+| ------------------ | ----------- | ------------------------------------------------------------ |
+| `unicode`          | `false`     | Use Unicode SMS (set to `true` for Unicode)                  |
+| `sender_id`        | `'gSystem'` | System sender. Change for other sender types                 |
+| `sender_id_value`  | `null`      | Sender value (e.g., for custom sender types)                 |
+| `country`          | `null`      | Country code (auto-detected if not provided)                 |
+| `schedule`         | `'Now'`     | Send immediately; set to timestamp/ISO for scheduled sending |
+| `duplicates_check` | `'off'`     | No duplicate check by default                                |
 
 Any value not provided will use the default above. You can override these by specifying them in the options object.
 
@@ -61,8 +61,12 @@ By default, bulkgate-sms logs outgoing requests, responses, and errors using `co
 import { setBulkGateLogger } from 'bulkgate-sms';
 
 setBulkGateLogger({
-  log: (...args) => {/* your log logic */},
-  error: (...args) => {/* your error logic */},
+  log: (...args) => {
+    /* your log logic */
+  },
+  error: (...args) => {
+    /* your error logic */
+  },
 });
 ```
 

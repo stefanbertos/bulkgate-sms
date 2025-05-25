@@ -20,9 +20,6 @@ export default [
   },
   prettier,
   {
-    ignores: [
-      'dist/**',
-      '__tests__/**',
-    ],
+    ignores: ['dist/**', '__tests__/**'],
   },
 ];
