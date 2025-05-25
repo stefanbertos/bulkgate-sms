@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --check .",
     "test": "jest",
-    "test:integration": "jest __tests__/integration/integration.test.ts",
+    "test:integration": "jest --config=jest.integration.config.js __tests__/integration/integration.test.ts",
     "prepare": "npm run build"
   },
   "repository": {
