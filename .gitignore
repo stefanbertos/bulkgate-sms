@@ -54,4 +54,4 @@ bower_components/
 Thumbs.db
 /src/index.js
 /__tests__/index.test.js
-/package-lock.json
+/dist/

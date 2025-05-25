@@ -6,6 +6,8 @@ To use the library, install it with:
 npm install bulkgate-sms
 ```
 
+**Requires Node.js 22.x**
+
 ## Default Values
 
 The following fields in `SendSMSOptions` have defaults and can be omitted:
