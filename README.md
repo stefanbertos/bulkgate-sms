@@ -84,5 +84,4 @@ This will capture all logs from the library, including requests and API response
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 #todos
-integration test
-sms confirmation https://help.bulkgate.com/docs/en/http-low-level-api-delivery-confirmations-and-incoming-sms.html
+-sms confirmation https://help.bulkgate.com/docs/en/http-low-level-api-delivery-confirmations-and-incoming-sms.html

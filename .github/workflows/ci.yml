@@ -20,6 +20,12 @@ jobs:
       - run: npm run format
       - run: npm run build
       - run: npm test
+      - run: npm run test:integration
+        env:
+          BULKGATE_APP_ID: ${{ secrets.BULKGATE_APP_ID }}
+          BULKGATE_TOKEN: ${{ secrets.BULKGATE_TOKEN }}
+          BULKGATE_TEST_NUMBER: ${{ secrets.BULKGATE_TEST_NUMBER }}
+          BULKGATE_SENDER_ID_VALUE: ${{ secrets.BULKGATE_SENDER_ID_VALUE }}
 
   publish:
     needs: build
