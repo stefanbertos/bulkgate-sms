@@ -8,7 +8,9 @@ const senderIdValue = process.env.BULKGATE_SENDER_ID_VALUE;
 describe('Integration: sendSMS', () => {
   it('should send a real SMS using real credentials', async () => {
     if (!appId || !token || !testNumber) {
-      throw new Error('Missing BULKGATE_APP_ID, BULKGATE_TOKEN, BULKGATE_TEST_NUMBER or BULKGATE_SENDER_ID_VALUE');
+      throw new Error(
+        'Missing BULKGATE_APP_ID, BULKGATE_TOKEN, BULKGATE_TEST_NUMBER or BULKGATE_SENDER_ID_VALUE',
+      );
     }
     const response = await sendSMS({
       application_id: appId,
