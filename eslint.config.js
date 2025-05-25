@@ -19,4 +19,10 @@ export default [
     },
   },
   prettier,
+  {
+    ignores: [
+      'dist/**',
+      '__tests__/**',
+    ],
+  },
 ];
