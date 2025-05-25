@@ -1,8 +1,10 @@
 # bulkgate-sms
 
-To use the library, install it with
+To use the library, install it with:
 
+```sh
 npm install bulkgate-sms
+```
 
 ## Default Values
 
@@ -64,7 +66,7 @@ setBulkGateLogger({
 
 This will capture all logs from the library, including requests and API responses.
 
-- See full API documentation: https://help.bulkgate.com/docs/en/http-simple-transactional-post-json.html
+- See full API documentation: [BulkGate HTTP API Docs](https://help.bulkgate.com/docs/en/http-simple-transactional-post-json.html)
 
 ---
 
