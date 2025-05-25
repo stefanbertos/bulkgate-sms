@@ -41,8 +41,12 @@ describe('sendSMS', () => {
             tag: 'test',
         };
         const result = await sendSMS(minimal as any);
-        expect(result).toHaveProperty('type', 'invalid_phone_number');
-        expect(result).toHaveProperty('code', 400);
+        if ('data' in result) {
+            throw new Error('Expected error response, got success');
+        } else {
+            expect(result).toHaveProperty('type', 'invalid_phone_number');
+            expect(result).toHaveProperty('code', 400);
+        }
     });
 
     it('should return success response shape', async () => {
@@ -55,8 +59,11 @@ describe('sendSMS', () => {
             tag: 'test',
         };
         const result = await sendSMS(minimal as any);
-        expect(result).toHaveProperty('data');
-        expect(result.data).toHaveProperty('status', 'accepted');
-        expect(result.data).toHaveProperty('sms_id');
+        if ('data' in result) {
+            expect(result.data).toHaveProperty('status', 'accepted');
+            expect(result.data).toHaveProperty('sms_id');
+        } else {
+            throw new Error('Expected success response, got error');
+        }
     });
 });
