@@ -4,6 +4,7 @@
   "description": "Send SMS via Bulkgate API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",

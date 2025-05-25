@@ -99,8 +99,8 @@ export type BulkGateSendSMSResponse = BulkGateSuccessResponse | BulkGateErrorRes
 
 // Global logger setup
 export type BulkGateLogger = {
-  log: (...args: any[]) => void;
-  error: (...args: any[]) => void;
+  log: (...args: unknown[]) => void;
+  error: (...args: unknown[]) => void;
 };
 
 let logger: BulkGateLogger = console;
