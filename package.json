@@ -16,7 +16,7 @@
     "url": "https://github.com/stefanbertos/bulkgate-sms.git"
   },
   "keywords": ["sms", "bulkgate", "nodejs", "typescript"],
-  "author": "<your-name>",
+  "author": "Stefan Bertos",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.0.0",
