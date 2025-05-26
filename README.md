@@ -55,7 +55,8 @@ const options: SendSMSOptions = {
 
 ## Custom Logging
 
-By default, bulkgate-sms logs outgoing requests, responses, and errors using `console`. You can provide your own logger (e.g., winston, pino) by calling `setBulkGateLogger`:
+By default, bulkgate-sms logs outgoing requests, responses, and errors using `console`. You can provide your own
+logger (e.g., winston, pino) by calling `setBulkGateLogger`:
 
 ```typescript
 import { setBulkGateLogger } from 'bulkgate-sms';
@@ -72,13 +73,13 @@ setBulkGateLogger({
 
 This will capture all logs from the library, including requests and API responses.
 
-- See full API documentation: [BulkGate HTTP API Docs](https://help.bulkgate.com/docs/en/http-simple-transactional-post-json.html)
+- See full API
+  documentation: [BulkGate HTTP API Docs](https://help.bulkgate.com/docs/en/http-simple-transactional-post-json.html)
 
 ---
 
 ## Badges
 
 [![Build Status](https://github.com/stefanbertos/bulkgate-sms/actions/workflows/ci.yml/badge.svg)](https://github.com/stefanbertos/bulkgate-sms/actions/workflows/ci.yml)
-[![Coverage Status](https://img.shields.io/codecov/c/github/stefanbertos/bulkgate-sms?style=flat-square)](https://app.codecov.io/gh/stefanbertos/bulkgate-sms)
 [![npm version](https://img.shields.io/npm/v/bulkgate-sms.svg?style=flat-square)](https://www.npmjs.com/package/bulkgate-sms)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
