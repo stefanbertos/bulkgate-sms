@@ -82,6 +82,3 @@ This will capture all logs from the library, including requests and API response
 [![Coverage Status](https://img.shields.io/codecov/c/github/stefanbertos/bulkgate-sms?style=flat-square)](https://app.codecov.io/gh/stefanbertos/bulkgate-sms)
 [![npm version](https://img.shields.io/npm/v/bulkgate-sms.svg?style=flat-square)](https://www.npmjs.com/package/bulkgate-sms)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-
-#todos
--sms confirmation https://help.bulkgate.com/docs/en/http-low-level-api-delivery-confirmations-and-incoming-sms.html
